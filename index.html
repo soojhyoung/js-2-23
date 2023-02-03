@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paseutel Canvas</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/a41ebeca25.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="color-options">
+      <div class="palette">
+        <div
+          class="color-option"
+          style="background-color: #b5c7ed"
+          data-color="#b5c7ed"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #c4f4fe"
+          data-color="#c4f4fe"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #bee9b4"
+          data-color="#bee9b4"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #fdfa87"
+          data-color="#fdfa87"
+        ></div>
+      </div>
+      <div class="palette">
+        <div
+          class="color-option"
+          style="background-color: #fcc6f7"
+          data-color="#fcc6f7"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #caa6fe"
+          data-color="#caa6fe"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #ffe4af"
+          data-color="#ffe4af"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #83a7a3"
+          data-color="#83a7a3"
+        ></div>
+      </div>
+      <div class="palette">
+        <div
+          class="color-option"
+          style="background-color: #acb890"
+          data-color="#acb890"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #dfd4e4"
+          data-color="#dfd4e4"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #eeb7b4"
+          data-color="#eeb7b4"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #e2ffaf"
+          data-color="#e2ffaf"
+        ></div>
+      </div>
+      <div class="palette">
+        <div
+          class="color-option"
+          style="background-color: #fcffb0"
+          data-color="#fcffb0"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #f2cfa5"
+          data-color="#f2cfa5"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #aee4ff"
+          data-color="#aee4ff"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #ffafb0"
+          data-color="#ffafb0"
+        ></div>
+      </div>
+    </div>
+    <div></div>
+
+    <canvas class="draw"></canvas>
+
+    <div class="btns">
+      <strong><span style="color: #ff7a7e">선택한 색상</span></strong>
+      <input type="color" id="color" />
+      <strong><span style="color: #ff7a7e">포인터 크기</span></strong>
+      <input
+        id="line-width"
+        type="range"
+        min="1"
+        max="10"
+        value="5"
+        step="0.1"
+      />
+      <div>
+        <button id="mode-btn" title="fill">
+          <i class="fa-solid fa-fill-drip"></i>
+        </button>
+        <button id="destroy-btn">
+          <i class="fa-solid fa-trash-can"></i>
+        </button>
+      </div>
+      <div>
+        <button id="eraser-btn">
+          <i class="fa-solid fa-eraser"></i>
+        </button>
+        <label for="file">
+          <i class="fa-solid fa-image"></i>
+          <input type="file" accept="image/*" id="file"
+        /></label>
+      </div>
+      <input type="text" id="text" placeholder="글자입력 후 더블클릭!" />
+      <button id="save"><i class="fa-solid fa-floppy-disk"></i></button>
+      <strong><span style="color: #ff7a7e">글자 크기</span></strong>
+      <input
+        id="font-size-range"
+        type="range"
+        min="10"
+        max="200"
+        value="50"
+        step="5"
+      />
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
